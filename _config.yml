@@ -4,7 +4,7 @@ email: brian@briannelsondesign.com
 description: > # this means to ignore newlines until "baseurl:"
   HTML/JS Prototype of a league scoring app for sporting clays, skeet, and
   5-stand, written for Capital City Sporting Clays in Bismarck, ND.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/scoreboard" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # Build settings
