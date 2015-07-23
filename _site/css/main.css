@@ -23,10 +23,19 @@ h6 {
   position: relative;
   top: 13px; }
 
+.score-table > tbody > tr > td {
+  vertical-align: middle; }
+
 .score-table.expanded tbody tr.team td {
   background: #dff0d8; }
+.score-table.expanded.table-bordered > tbody > tr.team > td {
+  border-top: 2px solid #333; }
 
 .score-table.collapsed tbody tr.shooter {
+  display: none; }
+.score-table.collapsed.table-bordered > thead > tr > th.prev {
+  border-right-color: #fff; }
+.score-table.collapsed thead tr span {
   display: none; }
 
 tbody td {
@@ -52,7 +61,10 @@ tbody td {
   border-right-color: #333; }
 
 .table-bordered > thead > tr > th {
-  border-color: #333; }
+  border-color: #333;
+  text-align: center; }
+  .table-bordered > thead > tr > th:first-child {
+    text-align: left; }
 
 .table-bordered > tbody > tr.team > td,
 .table-bordered > tbody > tr > td.name {
@@ -78,5 +90,5 @@ tbody td {
 .table-hover > tbody > tr:hover > td.adj {
   background: #dff0d8; }
 
-.expanded.table-bordered > tbody > tr.team > td {
-  border-top: 2px solid #333; }
+.team-actions {
+  text-align: center; }
