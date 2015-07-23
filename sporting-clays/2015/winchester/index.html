@@ -12,20 +12,23 @@ layout: default
   <small>2015</small>
 </h1>
 
-<div class="row">
-  <div class="col-sm-4">
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#standings" aria-controls="home" role="tab" data-toggle="tab">Standings</a></li>
+    <li role="presentation"><a href="#schedule" aria-controls="profile" role="tab" data-toggle="tab">Schedule</a></li>
+    <li role="presentation"><a href="#scores" aria-controls="profile" role="tab" data-toggle="tab">Scores</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="standings" class="tab-pane active">
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">Standings</h2>
-      </div>
-      <table class="table standings-table">
+      <table class="table table-hover standings-table">
         <thead>
           <tr>
             <th>Team</th>
-            <th>Win</th>
-            <th>Loss</th>
-            <th>Tie</th>
-            <th>Points</th>
+            <th width="10%">Win</th>
+            <th width="10%">Loss</th>
+            <th width="10%">Tie</th>
+            <th width="10%">Points</th>
           </tr>
         </thead>
         <tbody>
@@ -34,146 +37,97 @@ layout: default
             <td>7</td>
             <td>2</td>
             <td>1</td>
-            <td>15</td>
+            <td class="pts">15</td>
           </tr>
           <tr>
             <td>Bismarck Gold & Silver</td>
             <td>6</td>
             <td>2</td>
             <td>2</td>
-            <td>14</td>
+            <td class="pts">14</td>
           </tr>
           <tr>
             <td>Exhausted Ones</td>
             <td>6</td>
             <td>3</td>
             <td>1</td>
-            <td>13</td>
+            <td class="pts">13</td>
           </tr>
           <tr>
             <td>Northern Plains Equipment</td>
             <td>5</td>
             <td>2</td>
             <td>3</td>
-            <td>13</td>
+            <td class="pts">13</td>
           </tr>
           <tr>
             <td>NWTF</td>
             <td>5</td>
             <td>4</td>
             <td>1</td>
-            <td>11</td>
+            <td class="pts">11</td>
           </tr>
           <tr>
             <td>Budmen</td>
             <td>2</td>
             <td>7</td>
             <td>1</td>
-            <td>5</td>
+            <td class="pts">5</td>
           </tr>
           <tr>
             <td>Loose Cannons</td>
             <td>1</td>
             <td>6</td>
             <td>3</td>
-            <td>5</td>
+            <td class="pts">5</td>
           </tr>
           <tr>
             <td>Jake's Auto Glass</td>
             <td>1</td>
             <td>7</td>
             <td>2</td>
-            <td>4</td>
+            <td class="pts">4</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="4">
+              <small class="text-muted"><strong>Win:</strong> 2 points &bull; <strong>Bye:</strong> 2 points &bull; <strong>Tie:</strong> 1 point &bull; <strong>Loss:</strong> 0 points</small>
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  <div class="col-sm-8">
+  <div id="schedule" class="tab-pane">
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">Weekly Pairings</h2>
-      </div>
       <div class="table-responsive">
-        <table class="table pairings-table">
-          <thead>
-            <tr>
-              <th>Week 1</th>
-              <th>Week 2</th>
-              <th>Week 3</th>
-              <th>Week 4</th>
-              <th>Week 5</th>
-              <th>Week 6</th>
-              <th>Week 7</th>
-              <th>Week 8</th>
-              <th>Week 9</th>
-              <th>Week 10</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Budmen</td>
-              <td>NWTF<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Almost "HIT"</td>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-            </tr>
-            <tr>
-              <td>Loose Cannons<br>Almost "HIT"</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Budmen</td>
-              <td>NWTF<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>NWTF</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-            </tr>
-            <tr>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Budmen</td>
-              <td>NWTF<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Almost "HIT"</td>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-            </tr>
-            <tr>
-              <td>Loose Cannons<br>Almost "HIT"</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Budmen</td>
-              <td>NWTF<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>NWTF</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-            </tr>
-          </tbody>
-        </table>
+        {% include pairings-table.html %}
+      </div>
+    </div>
+  </div>
+  <div id="scores" class="tab-pane">
+    <a class="btn btn-xs btn-default toggle-shooters untoggled" href="#">shooters</a>
+    <div class="panel panel-default">
+      <div class="table-responsive">
+        {% include score-table.html %}
       </div>
     </div>
   </div>
 </div>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <div class="pull-right">
-      <a class="btn btn-xs btn-default toggle-shooters" href="#">Toggle shooters</a>
-    </div>
-    <h2 class="panel-title">Scores</h2>
-  </div>
-  <div class="table-responsive">
-    {% include score-table.html %}  
-  </div>
-</div>
+<div class="modal fade" id="pin_modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title">Enter your team PIN</h4>
+      </div>
+      <div class="modal-body text-center">
+        <input type="text" class="form-control input-lg text-center" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit" class="btn btn-success">Continue</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

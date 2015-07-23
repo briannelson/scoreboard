@@ -19,22 +19,45 @@ h6 {
   font-size: 16px;
   margin-bottom: 0; }
 
+.nav-tabs {
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
 .standings-table thead th {
-  text-align: right; }
+  text-align: center; }
   .standings-table thead th:first-child {
     text-align: left; }
 .standings-table tbody td {
   text-align: center; }
   .standings-table tbody td:first-child {
     text-align: left; }
+.standings-table .pts {
+  font-weight: bold; }
 
 .pairings-table thead th, .pairings-table tbody td {
   text-align: left;
   white-space: nowrap; }
+.pairings-table .team {
+  display: inline-block;
+  margin-right: 40px; }
+  .pairings-table .team.win {
+    font-weight: bold; }
+.pairings-table .scr {
+  float: right; }
+  .pairings-table .scr.win {
+    font-weight: bold; }
+
+#scores {
+  position: relative; }
 
 .toggle-shooters {
-  position: relative;
-  top: -2px; }
+  position: absolute;
+  right: 0;
+  top: -55px; }
+  .toggle-shooters.toggled:before {
+    content: "Hide "; }
+  .toggle-shooters.untoggled:before {
+    content: "Show "; }
 
 .score-table > tbody > tr > td {
   vertical-align: middle; }
@@ -59,31 +82,31 @@ tbody td {
 .team td {
   font-weight: bold; }
 
-.table-bordered {
+.score-table {
   border: 2px solid #333; }
 
-.table-bordered > tbody > tr > td {
+.score-table > tbody > tr > td {
   border-color: rgba(0, 0, 0, 0.07); }
 
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr.team > td,
-.table-bordered > tbody > tr > td.adj,
-.table-bordered > tbody > tr > td.final,
-.table-bordered > tbody > tr > td.prev,
-.table-bordered > tbody > tr > td.change {
+.score-table > thead > tr > th,
+.score-table > tbody > tr.team > td,
+.score-table > tbody > tr > td.adj,
+.score-table > tbody > tr > td.final,
+.score-table > tbody > tr > td.prev,
+.score-table > tbody > tr > td.change {
   border-right-color: #333; }
 
-.table-bordered > thead > tr > th {
+.score-table > thead > tr > th {
   border-color: #333;
   text-align: center; }
-  .table-bordered > thead > tr > th:first-child {
+  .score-table > thead > tr > th:first-child {
     text-align: left; }
 
-.table-bordered > tbody > tr.team > td,
-.table-bordered > tbody > tr > td.name {
+.score-table > tbody > tr.team > td,
+.score-table > tbody > tr > td.name {
   border-left-color: #333; }
 
-.table-bordered > tbody > tr:last-child > td {
+.score-table > tbody > tr:last-child > td {
   border-bottom-color: #333; }
 
 .table > tbody > tr > td.adj {

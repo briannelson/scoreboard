@@ -91,6 +91,7 @@
     <script>
   $(document).ready(function() {
     $('.toggle-shooters').on('click', function() {
+      $(this).toggleClass('untoggled toggled')
       $('.score-table').toggleClass('collapsed expanded')
       return false
     })
