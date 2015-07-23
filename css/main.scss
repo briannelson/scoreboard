@@ -25,9 +25,29 @@ h6 {
   font-size: 16px;
   margin-bottom: 0;
 }
+.standings-table {
+  thead th {
+    text-align: right;
+    &:first-child {
+      text-align: left;
+    }
+  }
+  tbody td {
+    text-align: center;
+    &:first-child {
+      text-align: left;
+    }
+  }
+}
+.pairings-table {
+  thead th, tbody td {
+    text-align: left;
+    white-space: nowrap;
+  }
+}
 .toggle-shooters {
   position: relative;
-  top: 13px;
+  top: -2px;
 }
 .score-table>tbody>tr>td {
   vertical-align: middle;

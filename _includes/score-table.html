@@ -1,225 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>CCSCoreboard</title>
-  <meta name="description" content="HTML/JS Prototype of a league scoring app for sporting clays, skeet, and 5-stand, written for Capital City Sporting Clays in Bismarck, ND.
-">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400italic,700,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/main.css">
-
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link rel="canonical" href="/sporting-clays/2015/winchester/">
-  <link rel="alternate" type="application/rss+xml" title="CCSCoreboard" href="/feed.xml" />
-</head>
-
-
-  <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">CCSCoreboard</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a class="page-link" href="/admin">Admin</a></li>
-        <li><a class="page-link" href="/shooter">Shooter</a></li>
-      </ul> -->
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-    <div class="container-fluid">
-      <ol class="breadcrumb">
-  <li><a href="/">Home</a></li>
-  <li class="active">Winchester</li>
-</ol>
-
-<h1>
-  Winchester League
-  <small>2015</small>
-</h1>
-
-<div class="row">
-  <div class="col-sm-4">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">Standings</h2>
-      </div>
-      <table class="table standings-table">
-        <thead>
-          <tr>
-            <th>Team</th>
-            <th>Win</th>
-            <th>Loss</th>
-            <th>Tie</th>
-            <th>Points</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Almost "HIT"</td>
-            <td>7</td>
-            <td>2</td>
-            <td>1</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Bismarck Gold & Silver</td>
-            <td>6</td>
-            <td>2</td>
-            <td>2</td>
-            <td>14</td>
-          </tr>
-          <tr>
-            <td>Exhausted Ones</td>
-            <td>6</td>
-            <td>3</td>
-            <td>1</td>
-            <td>13</td>
-          </tr>
-          <tr>
-            <td>Northern Plains Equipment</td>
-            <td>5</td>
-            <td>2</td>
-            <td>3</td>
-            <td>13</td>
-          </tr>
-          <tr>
-            <td>NWTF</td>
-            <td>5</td>
-            <td>4</td>
-            <td>1</td>
-            <td>11</td>
-          </tr>
-          <tr>
-            <td>Budmen</td>
-            <td>2</td>
-            <td>7</td>
-            <td>1</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Loose Cannons</td>
-            <td>1</td>
-            <td>6</td>
-            <td>3</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Jake's Auto Glass</td>
-            <td>1</td>
-            <td>7</td>
-            <td>2</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="col-sm-8">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h2 class="panel-title">Weekly Pairings</h2>
-      </div>
-      <div class="table-responsive">
-        <table class="table pairings-table">
-          <thead>
-            <tr>
-              <th>Week 1</th>
-              <th>Week 2</th>
-              <th>Week 3</th>
-              <th>Week 4</th>
-              <th>Week 5</th>
-              <th>Week 6</th>
-              <th>Week 7</th>
-              <th>Week 8</th>
-              <th>Week 9</th>
-              <th>Week 10</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Budmen</td>
-              <td>NWTF<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Almost "HIT"</td>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-            </tr>
-            <tr>
-              <td>Loose Cannons<br>Almost "HIT"</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Budmen</td>
-              <td>NWTF<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>NWTF</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-            </tr>
-            <tr>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Budmen</td>
-              <td>NWTF<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Almost "HIT"</td>
-              <td>Bismarck Gold & Silver<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>Bismarck Gold & Silver</td>
-              <td>Bismarck Gold & Silver<br>Exhausted Ones</td>
-            </tr>
-            <tr>
-              <td>Loose Cannons<br>Almost "HIT"</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Exhausted Ones</td>
-              <td>Northern Plains Equipment<br>Jake's Auto Glass</td>
-              <td>Jake's Auto Glass<br>Budmen</td>
-              <td>NWTF<br>Jake's Auto Glass</td>
-              <td>Loose Cannons<br>NWTF</td>
-              <td>Jake's Auto Glass<br>Almost "HIT"</td>
-              <td>Loose Cannons<br>Jake's Auto Glass</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <div class="pull-right">
-      <a class="btn btn-xs btn-default toggle-shooters" href="#">Toggle shooters</a>
-    </div>
-    <h2 class="panel-title">Scores</h2>
-  </div>
-  <table class="table table-condensed table-bordered table-hover score-table collapsed">
+<table class="table table-condensed table-bordered table-hover score-table collapsed">
   <thead>
     <tr>
       <th colspan="2">Team</th>
@@ -253,7 +32,7 @@
       <td colspan="3">179</td>
       <td>1802</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -558,7 +337,7 @@
       <td colspan="3">158</td>
       <td>1710</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -863,7 +642,7 @@
       <td colspan="3">179</td>
       <td>1802</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -1168,7 +947,7 @@
       <td colspan="3">158</td>
       <td>1710</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -1473,7 +1252,7 @@
       <td colspan="3">179</td>
       <td>1802</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -1778,7 +1557,7 @@
       <td colspan="3">158</td>
       <td>1710</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -2083,7 +1862,7 @@
       <td colspan="3">179</td>
       <td>1802</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -2388,7 +2167,7 @@
       <td colspan="3">158</td>
       <td>1710</td>
       <td class="team-actions" colspan="2">
-        <a class="btn btn-xs btn-success" href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
+        <a class="btn btn-xs btn-success" href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit">Enter scores</a>
       </td>
     </tr>
     <tr class="shooter">
@@ -2682,21 +2461,3 @@
 
   </tbody>
 </table>
-
-</div>
-
-    </div>
-
-    <script>
-  $(document).ready(function() {
-    $('.toggle-shooters').on('click', function() {
-      $('.score-table').toggleClass('collapsed expanded')
-      return false
-    })
-  })
-</script>
-
-
-  </body>
-
-</html>
