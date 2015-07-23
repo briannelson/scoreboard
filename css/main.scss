@@ -15,3 +15,82 @@ h5,
 h6 {
   font-weight: bold;
 }
+
+.league-list-heading {
+  font-size: 24px;
+  margin: 0 0 5px;
+}
+.league-list-date {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.toggle-shooters {
+  position: relative;
+  top: 13px;
+}
+.score-table.expanded {
+  tbody tr.team td {
+    background: #dff0d8;
+  }
+}
+.score-table.collapsed {
+  tbody tr.shooter {
+    display: none;
+  }
+}
+tbody td {
+  text-align: right;
+  &:first-child {
+    text-align: left;
+  }
+}
+.team td {
+  font-weight: bold;
+}
+.table-bordered {
+  border: 2px solid #333;
+}
+.table-bordered>tbody>tr>td {
+  border-color: rgba(0,0,0,.07);
+}
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr.team>td,
+.table-bordered>tbody>tr>td.adj,
+.table-bordered>tbody>tr>td.final,
+.table-bordered>tbody>tr>td.prev,
+.table-bordered>tbody>tr>td.change {
+  border-right-color: #333;
+}
+.table-bordered>thead>tr>th {
+  border-color: #333;
+}
+.table-bordered>tbody>tr.team>td,
+.table-bordered>tbody>tr>td.name {
+  border-left-color: #333;
+}
+.table-bordered>tbody>tr:last-child>td {
+  border-bottom-color: #333;
+}
+.table>tbody>tr>td.adj {
+  background: lighten(#dff0d8, 5%);
+  font-weight: bold;
+}
+.table>tbody>tr>td.hcp {
+  color: #999;
+  font-style: italic;
+  &.prev {
+    text-align: center;
+  }
+}
+.table>tbody>tr>td.final {
+  background: #dff0d8;
+  font-weight: bold;
+}
+.table-hover>tbody>tr:hover>td.adj {
+  background: #dff0d8;
+}
+
+.expanded.table-bordered>tbody>tr.team>td {
+  border-top: 2px solid #333;
+}
