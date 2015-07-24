@@ -1,3 +1,48 @@
+<div class="modal fade" id="enter_modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="form-group">
+          <label>Choose your league</label>
+          <select class="form-control">
+            <option></option>
+            <option>5-Stand</option>
+            <option>Chilly Whilly</option>
+            <option>Skeet</option>
+            <optgroup label="Sporting Clays">
+              <option>Federal</option>
+              <option>Remington</option>
+              <option>Winchester</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Choose your team</label>
+          <select class="form-control">
+            <option></option>
+            <option>Almost "HIT"</option>
+            <option>Bismarck Gold & Silver</option>
+            <option>Budmen</option>
+            <option>Exhausted Ones</option>
+            <option>Jake's Auto Glass</option>
+            <option>Loose Cannons</option>
+            <option>Northern Plains Equipment</option>
+            <option>NWTF</option>
+          </select>
+
+        </div>
+        <label>Enter your team PIN</label>
+        <input type="text" class="form-control input-lg text-center" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="{{ site.baseurl }}/sporting-clays/2015/winchester/bismarck-gold-silver/edit" class="btn btn-success">Continue</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <script>
   $(document).ready(function() {
     $('.toggle-shooters').on('click', function() {

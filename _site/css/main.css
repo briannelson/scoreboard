@@ -128,3 +128,14 @@ tbody td {
 
 .team-actions {
   text-align: center; }
+
+.enter-score-table th, .enter-score-table td {
+  text-align: center; }
+  .enter-score-table th:first-child, .enter-score-table td:first-child {
+    text-align: left; }
+.enter-score-table > tbody > tr > td {
+  vertical-align: middle; }
+.enter-score-table input[type="text"] {
+  margin: 0 auto;
+  max-width: 50px;
+  text-align: center; }

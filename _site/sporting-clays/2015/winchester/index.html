@@ -38,10 +38,10 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a class="page-link" href="/admin">Admin</a></li>
-        <li><a class="page-link" href="/shooter">Shooter</a></li>
-      </ul> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="page-link" href="#enter_modal" data-toggle="modal">Enter Scores</a></li>
+        <!-- <li><a class="page-link" href="/shooter">Shooter</a></li> -->
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -66,7 +66,7 @@
 
 <div class="tab-content">
   <div id="standings" class="tab-pane active">
-    <div class="panel panel-default">
+    <div class="panel panel-default tab-panel">
       <table class="table table-hover standings-table">
         <thead>
           <tr>
@@ -145,7 +145,7 @@
     </div>
   </div>
   <div id="schedule" class="tab-pane">
-    <div class="panel panel-default">
+    <div class="panel panel-default tab-panel">
       <div class="table-responsive">
         <table class="table table-bordered pairings-table">
   <thead>
@@ -235,7 +235,7 @@
   </div>
   <div id="scores" class="tab-pane">
     <a class="btn btn-xs btn-default toggle-shooters untoggled" href="#">shooters</a>
-    <div class="panel panel-default">
+    <div class="panel panel-default tab-panel">
       <div class="table-responsive">
         <table class="table table-condensed table-bordered table-hover score-table collapsed">
   <thead>
@@ -2725,7 +2725,52 @@
 
     </div>
 
-    <script>
+    <div class="modal fade" id="enter_modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="form-group">
+          <label>Choose your league</label>
+          <select class="form-control">
+            <option></option>
+            <option>5-Stand</option>
+            <option>Chilly Whilly</option>
+            <option>Skeet</option>
+            <optgroup label="Sporting Clays">
+              <option>Federal</option>
+              <option>Remington</option>
+              <option>Winchester</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Choose your team</label>
+          <select class="form-control">
+            <option></option>
+            <option>Almost "HIT"</option>
+            <option>Bismarck Gold & Silver</option>
+            <option>Budmen</option>
+            <option>Exhausted Ones</option>
+            <option>Jake's Auto Glass</option>
+            <option>Loose Cannons</option>
+            <option>Northern Plains Equipment</option>
+            <option>NWTF</option>
+          </select>
+
+        </div>
+        <label>Enter your team PIN</label>
+        <input type="text" class="form-control input-lg text-center" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit" class="btn btn-success">Continue</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script>
   $(document).ready(function() {
     $('.toggle-shooters').on('click', function() {
       $(this).toggleClass('untoggled toggled')

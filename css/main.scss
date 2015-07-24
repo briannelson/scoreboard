@@ -160,3 +160,23 @@ tbody td {
 .team-actions {
   text-align: center;
 }
+
+
+// Entering Scores
+
+.enter-score-table {
+  th, td {
+    text-align: center;
+    &:first-child {
+      text-align: left;
+    }
+  }
+  >tbody>tr>td {
+    vertical-align: middle;
+  }
+  input[type="text"] {
+    margin: 0 auto;
+    max-width: 50px;
+    text-align: center;
+  }
+}

@@ -38,10 +38,10 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a class="page-link" href="/admin">Admin</a></li>
-        <li><a class="page-link" href="/shooter">Shooter</a></li>
-      </ul> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="page-link" href="#enter_modal" data-toggle="modal">Enter Scores</a></li>
+        <!-- <li><a class="page-link" href="/shooter">Shooter</a></li> -->
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -54,9 +54,164 @@
   <li class="active">Bismarck Gold & Silver</li>
 </ol>
 
+<table class="table enter-score-table">
+  <thead>
+    <tr>
+      <th>Shooter</th>
+      <th>Week 1</th>
+      <th>Week 2</th>
+      <th>Week 3</th>
+      <th>Week 4</th>
+      <th>Week 5</th>
+      <th>Week 6</th>
+      <th>Week 7</th>
+      <th>Week 8</th>
+      <th>Week 9</th>
+      <th>Week 10</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="shooter">Larry Schneider</td>
+      <td>33</td>
+      <td>42</td>
+      <td>40</td>
+      <td>36</td>
+      <td><input type="text" name="name" value="" tabindex="50" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="60" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="70" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="80" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="90" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="100" class="form-control"></td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td class="shooter">Tim Berhow</td>
+      <td>33</td>
+      <td>42</td>
+      <td>40</td>
+      <td>36</td>
+      <td><input type="text" name="name" value="" tabindex="51" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="61" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="71" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="81" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="91" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="101" class="form-control"></td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td class="shooter">Mark Schneider</td>
+      <td>33</td>
+      <td>42</td>
+      <td>40</td>
+      <td>36</td>
+      <td><input type="text" name="name" value="" tabindex="52" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="62" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="72" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="82" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="92" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="102" class="form-control"></td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td class="shooter">Zach Schneider</td>
+      <td>33</td>
+      <td>42</td>
+      <td>40</td>
+      <td>36</td>
+      <td><input type="text" name="name" value="" tabindex="53" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="63" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="73" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="83" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="93" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="103" class="form-control"></td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td class="shooter">Al Geisen</td>
+      <td>33</td>
+      <td>42</td>
+      <td>40</td>
+      <td>36</td>
+      <td><input type="text" name="name" value="" tabindex="54" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="64" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="74" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="84" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="94" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="104" class="form-control"></td>
+      <td>440</td>
+    </tr>
+    <tr>
+      <td class="shooter">Jeff Luptak</td>
+      <td>33</td>
+      <td>42</td>
+      <td>40</td>
+      <td>36</td>
+      <td><input type="text" name="name" value="" tabindex="55" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="65" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="75" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="85" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="95" class="form-control"></td>
+      <td><input type="text" name="name" value="" tabindex="105" class="form-control"></td>
+      <td>440</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <p><a class="btn btn-success btn-lg" href="/sporting-clays/2015/winchester/">Submit Scores</a></p>
+  <p class="text-muted">Once submitted, you can edit your scores until they are approved by the staff.</p>
+</div>
+
     </div>
 
-    <script>
+    <div class="modal fade" id="enter_modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="form-group">
+          <label>Choose your league</label>
+          <select class="form-control">
+            <option></option>
+            <option>5-Stand</option>
+            <option>Chilly Whilly</option>
+            <option>Skeet</option>
+            <optgroup label="Sporting Clays">
+              <option>Federal</option>
+              <option>Remington</option>
+              <option>Winchester</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Choose your team</label>
+          <select class="form-control">
+            <option></option>
+            <option>Almost "HIT"</option>
+            <option>Bismarck Gold & Silver</option>
+            <option>Budmen</option>
+            <option>Exhausted Ones</option>
+            <option>Jake's Auto Glass</option>
+            <option>Loose Cannons</option>
+            <option>Northern Plains Equipment</option>
+            <option>NWTF</option>
+          </select>
+
+        </div>
+        <label>Enter your team PIN</label>
+        <input type="text" class="form-control input-lg text-center" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="/sporting-clays/2015/winchester/bismarck-gold-silver/edit" class="btn btn-success">Continue</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script>
   $(document).ready(function() {
     $('.toggle-shooters').on('click', function() {
       $(this).toggleClass('untoggled toggled')

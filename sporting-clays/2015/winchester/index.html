@@ -20,7 +20,7 @@ layout: default
 
 <div class="tab-content">
   <div id="standings" class="tab-pane active">
-    <div class="panel panel-default">
+    <div class="panel panel-default tab-panel">
       <table class="table table-hover standings-table">
         <thead>
           <tr>
@@ -99,7 +99,7 @@ layout: default
     </div>
   </div>
   <div id="schedule" class="tab-pane">
-    <div class="panel panel-default">
+    <div class="panel panel-default tab-panel">
       <div class="table-responsive">
         {% include pairings-table.html %}
       </div>
@@ -107,7 +107,7 @@ layout: default
   </div>
   <div id="scores" class="tab-pane">
     <a class="btn btn-xs btn-default toggle-shooters untoggled" href="#">shooters</a>
-    <div class="panel panel-default">
+    <div class="panel panel-default tab-panel">
       <div class="table-responsive">
         {% include score-table.html %}
       </div>
